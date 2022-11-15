@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """
 Flask application
@@ -47,3 +46,7 @@ def py_sub(text):
 def int_n(n):
     """int substitution"""
     return f"{n} is a number"
+
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
