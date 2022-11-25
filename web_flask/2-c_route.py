@@ -4,6 +4,7 @@
 from flask import Flask
 
 app = Flask(__name__)
+"""initializing flask to app variable"""
 
 
 @app.route('/', strict_slashes=False)
