@@ -8,7 +8,6 @@ app = Flask(__name__)
 
 
 @app.route('/', strict_slashes=False)
-""" """
 def return_message():
     """return a simple message"""
     return "Hello HBNB!"
