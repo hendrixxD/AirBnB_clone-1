@@ -1,27 +1,37 @@
 #!/usr/bin/python3
-"""AirBnB flask app Module"""
+"""
+AirBnB flask app Module
+"""
 
 from flask import Flask
 
 app = Flask(__name__)
-"""initializing flask to app variable"""
+"""
+initializing flask to app variable
+"""
 
 
 @app.route('/', strict_slashes=False)
 def return_message():
-    """return a simple message"""
+    """
+    return a simple message
+    """
     return "Hello HBNB!"
 
 
 @app.route('/hbnb', strict_slashes=False)
 def return_HBNB():
-    """return HBNB in /hbnb route"""
+    """
+    return HBNB in /hbnb route
+    """
     return "HBNB"
 
 
 @app.route('/c/<text>', strict_slashes=False)
 def C_is_fun(text):
-    """C is fun"""
+    """
+    C is fun
+    """
     return f"C {text}".replace("_", " ")
 
 
