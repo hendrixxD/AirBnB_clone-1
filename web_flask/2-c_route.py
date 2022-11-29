@@ -1,39 +1,54 @@
 #!/usr/bin/python3
 """
-AirBnB flask app Module
+Flask application
 """
 
 from flask import Flask
 
 app = Flask(__name__)
-"""
-initializing flask to app variable
-"""
 
 
-@app.route('/', strict_slashes=False)
-def return_message():
+@app.route("/", strict_slashes=False)
+def index():
     """
-    return a simple message
+    root directory
     """
     return "Hello HBNB!"
 
 
-@app.route('/hbnb', strict_slashes=False)
-def return_HBNB():
+@app.route("/hbnb", strict_slashes=False)
+def hbnb():
     """
-    return HBNB in /hbnb route
+    hbnb directory
     """
     return "HBNB"
 
 
-@app.route('/c/<text>', strict_slashes=False)
-def C_is_fun(text):
+@app.route("/c/<text>", strict_slashes=False)
+def c_is_life(text):
     """
-    C is fun
+    text substitution
     """
-    return f"C {text}".replace("_", " ")
+    return "C {}".format(text).replace("_", " ")
+
+
+@app.route("/python", defaults={'text': 'is_cool'})
+@app.route("/python/", defaults={'text': 'is_cool'})
+@app.route("/python/<text>", strict_slashes=False)
+def py_sub(text):
+    """
+    More text substitution
+    """
+    return "Python {}".format(text).replace("_", " ")
+
+
+@app.route("/number/<int:n>", strict_slashes=False)
+def number(n):
+    """
+    url int substitution
+    """
+    return "{} is a number".format(n)
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host="0.0.0.0", port=5000)
