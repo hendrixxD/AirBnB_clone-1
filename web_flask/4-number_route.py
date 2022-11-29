@@ -44,7 +44,9 @@ def py_sub(text):
 
 @app.route("/number/<int:n>", strict_slashes=False)
 def int_n(n):
-    """int substitution"""
+    """
+    int substitution
+    """
     return "{} is a number".format(n)
 
 
