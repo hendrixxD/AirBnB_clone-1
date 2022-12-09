@@ -60,3 +60,6 @@ class FileStorage:
         if obj is not None:
             key = "{}.{}".format(type(obj).__name__, obj.id)
             del FileStorage.__objects[key]
+
+    def close(self):
+        reload()
