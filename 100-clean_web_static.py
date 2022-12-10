@@ -3,7 +3,7 @@
 import os
 from fabric.api import *
 
-env.hosts = ["18.234.192.112", "100.25.192.241"]
+env.hosts = ["3.235.25.224", "18.206.207.50"]
 
 
 def do_clean(number=0):
