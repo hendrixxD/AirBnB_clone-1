@@ -5,8 +5,8 @@
  your AirBnB Clone repo, using the function do_pack
 """
 
-from datetime import datetime
 from fabric.api import local
+from datetime import datetime
 
 def do_pack():
     """Function to compress directory
