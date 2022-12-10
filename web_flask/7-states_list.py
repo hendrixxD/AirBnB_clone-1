@@ -1,6 +1,7 @@
 
 #!/usr/bin/python3
 """
+return list of states
 """
 
 from models import storage
