@@ -1,0 +1,47 @@
+<<<<<<< HEAD
+@import "3-header.css";
+@import "3-footer.css";
+
+body {
+    margin: 0px;
+    padding: 0px;
+    color: #484848;
+    font-size: 14px;
+    font-family: Circular, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    height: 100%;
+}
+=======
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #484848;
+    font-family: circular, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    position: relative;
+    position: relative;
+   display: flex;
+   flex-flow: column nowrap;
+
+} 
+.container {
+    width: 100%;
+    margin: 30px auto;
+    max-width: 1000px;
+    flex: 1 0 auto;
+    position: relative;
+}
+p {
+    text-align: center;
+    vertical-align: middle;
+}
+>>>>>>> 4b13d8267c73abfdb4472d242c051fe0e7ef1c0b
